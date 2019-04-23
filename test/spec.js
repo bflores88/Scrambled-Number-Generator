@@ -3,12 +3,6 @@ var expect = chai.expect;
 var generator = require('../generator.js');
 
 describe('Generate 10 scrambled numbers', function() {
-  it('unique numbers must start at zero', function() {
-    var result = generator(10);
-    expect(result).to.have.length(10);
-    expect(result[0]).to.equal(0);
-  });
-
   it('should have length 10 and not be sorted', function() {
     var result = generator(10);
     expect(result).to.have.length(10);

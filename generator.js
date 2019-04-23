@@ -6,8 +6,8 @@ module.exports = function(n) {
 
   let scrambled = [0];
 
-  for (let i = 1; i < n; i++) {
-    let randomNumber = Math.floor(Math.random() * (n - 1)) + 1;
+  for (let i = 0; i < n; i++) {
+    let randomNumber = Math.floor(Math.random() * n;
     scrambled.push(randomNumber);
   }
 
